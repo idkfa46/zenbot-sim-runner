@@ -143,6 +143,7 @@ in a nutshell, you need to install the dependencies, tell it where your working 
    ```
 5. Create database tables
    ```sh
+   php artisan key:generate
    php artisan migrate
    ```
 6. Set your queue connection to 'redis'. In Laravel's `.env` by adding `QUEUE_CONNECTION=redis`. In the absence of that line it will default to `sync` (which can be more convenient for troubleshooting etc).
